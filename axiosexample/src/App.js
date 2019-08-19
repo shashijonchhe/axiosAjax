@@ -23,7 +23,17 @@ class App extends React.Component{
     let users=this.state.users
     return(
       <div>
-        {users.map(user=><div>{user.address.geo.lat}</div>)}
+        {users.map(user=>
+          <div>
+
+          <h5>Name:{user.name}</h5>
+          
+          <p>Email:{user.email}</p>
+          <span>Contact:{user.phone}</span>
+          <hr></hr>
+      
+          </div>
+         )}
 
 
       </div>
